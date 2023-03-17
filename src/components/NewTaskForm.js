@@ -15,7 +15,6 @@ function NewTaskForm({cats, setTasks}) {
   
   function onFormSubmit(e) {
     e.preventDefault()
-    console.log(form)
     setTasks(allTasks => [...allTasks, form])
     setForm({
       text: "",
